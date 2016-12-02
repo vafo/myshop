@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'products',
     'news',
+    'bootstrap3',
 ]
 
 MIDDLEWARE = [
@@ -120,3 +121,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Settings for django-bootstrap3
+BOOTSTRAP3 = {
+    'error_css_class': 'bootstrap3-error',
+    'required_css_class': 'bootstrap3-required',
+    'javascript_in_head': True,
+}
